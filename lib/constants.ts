@@ -1,0 +1,22 @@
+export const PRESET_TAGS = [
+  "AI Chat",
+  "Writing",
+  "Programming",
+  "Art",
+  "Design",
+  "Creative",
+  "音声認識",
+  "画像編集",
+  "翻訳",
+  "データ分析",
+  "自動化",
+  "動画編集",
+  "3D",
+  "音楽生成",
+  "テキスト要約",
+  "コード生成",
+  "ビジネス",
+  "教育",
+  "研究",
+  "マーケティング"
+] as const;
