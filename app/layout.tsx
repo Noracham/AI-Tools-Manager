@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Sidebar } from "@/components/sidebar";
 import { ToolsProvider } from "@/lib/tools-context";
-import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -28,11 +27,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ToolsProvider>
-            <Sidebar />
-            <div className="p-4">
-              {children}
+            <div className="flex">
+              <Sidebar />
+              <div className="flex-1">
+                {children}
+              </div>
             </div>
-            <Toaster richColors closeButton position="top-center" />
           </ToolsProvider>
         </ThemeProvider>
       </body>
