@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ToolsProvider>
-            <div className="flex">
+            <div className="flex flex-col md:flex-row">
               <Sidebar />
               <div className="flex-1">
                 {children}
