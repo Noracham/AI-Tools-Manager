@@ -8,6 +8,4 @@ const nextConfig = {
   }
 };
 
-module.exports = {
-  exportPath: 'out',
-};
+module.exports = nextConfig;
